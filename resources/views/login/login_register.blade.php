@@ -44,7 +44,7 @@
 
 
 
-        <form class="formulario" action="{{ route('register') }}" method="POST">
+        <form class="formulario" action="{{ route('register.post') }}" method="POST">
             @csrf
             @if (session('message'))
             <div class="alert alert-warning">

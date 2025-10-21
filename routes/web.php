@@ -16,7 +16,7 @@ Route::get('/login', [HomeController::class, 'loginRegister'])->name('login.regi
 Route::get('inicio/login', [AuthenticatedSessionController::class, 'create'])->name('login');
 Route::post('inicio/login', [AuthenticatedSessionController::class, 'store']);
 Route::get('inicio/register', [AuthenticatedSessionController::class, 'add_register'])->name('register');
-Route::post('inicio/register', [AuthenticatedSessionController::class, 'add_register'])->name('register');
+Route::post('inicio/register', [AuthenticatedSessionController::class, 'add_register'])->name('register.post');
 
 // DESTROY SESSION
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
