@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image:url(/img/fondo_login.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #ffffff;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.206); /* Ajusta la opacidad */
+      z-index: -1;
+    }
+
+    .container-form {
+      width: 90%;
+      height: 90vh;
+      display: flex;
+      justify-content: space-around;
+      transition:  all .5s ease-out;
+    }
+
+    .welcome-back {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .message {
+      padding: 1rem;
+   }
+
+    .message h1 {
+      font-size: 1.7rem;
+      padding: 1rem 0;
+    }
+
+  .formulario {
+      width: 400px;
+      padding: 1rem;
+      margin: 2rem;
+      border-radius: 10px;
+      background-color: rgba(9, 3, 0, 0.783);
+      text-align: center;
+      box-shadow: 3px 3px 12px 2px rgba(228, 149, 4, 0.767);
+  }
+
+  #create-account {
+      padding: 1rem 0;
+      font-size: 1.7rem;
+      color: #ffffff;
+  }
+  h1,h6{
+    color: #ffffff
+  }
+  .iconos {
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+  }
+
+  .border-icon {
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      border: solid thin white;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      transition: all .3s ease-in;
+  }
+
+  .border-icon:hover {
+      background-color: #f49434;
+      cursor: pointer;
+  }
+
+  .cuenta-gratis {
+      padding: 2rem 0;
+  }
+
+  .formulario input {
+      width: 70%;
+      display: block;
+      margin: auto;
+      margin-bottom: 2rem;
+      background-color: transparent;
+      border: none;
+      border-bottom: white thin solid;
+      text-align: center;
+      outline: none;
+      padding: .2rem 0;
+      font-size: .9rem;
+      color: white;
+  }
+
+  .formulario input[type="submit"] {
+      width: 60%;
+      margin: auto;
+      border: solid thin white;
+      padding: .7rem;
+      border-radius: 2rem;
+      background-color: white;
+      font-weight: 600;
+      margin-top: 3rem;
+      font-size: .8rem;
+      cursor: pointer;
+      color: #222;
+  }
+
+  .sign-in {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  .sign-in.active {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .sign-up.active {
+      opacity: 0;
+      visibility: hidden;
+  }
